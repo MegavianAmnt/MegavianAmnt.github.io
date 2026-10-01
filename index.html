@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nama Kamu | Portofolio Business Intelligence</title>
+  <meta name="description" content="Portofolio mahasiswa Sistem Informasi BINUS University, peminatan Business Intelligence, anggota BINUS TV Club." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">Nama<span>.</span></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#experience">Organisasi</a></li>
+        <li><a href="#education">Pendidikan</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="hero-greeting">Halo, saya</p>
+      <h1>Nama Lengkap Kamu</h1>
+      <h2>Mahasiswa Sistem Informasi | <span class="typing" id="typing"></span></h2>
+      <p class="hero-desc">
+        Mahasiswa Sistem Informasi di BINUS University dengan peminatan
+        <strong>Business Intelligence</strong>. Saya senang mengubah data mentah menjadi
+        insight yang membantu pengambilan keputusan bisnis, dan aktif sebagai anggota
+        <strong>BINUS TV Club</strong> di bidang produksi media.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+        <a href="assets/CV.pdf" class="btn btn-outline" download>Unduh CV</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/username" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:emailkamu@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="photo-frame">
+        <!-- Ganti dengan foto kamu: assets/foto.jpg -->
+        <img src="assets/foto.jpg" alt="Foto profil" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="photo-placeholder">📊</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TENTANG ============ -->
+  <section class="section" id="about">
+    <h2 class="section-title">Tentang <span>Saya</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Saya adalah mahasiswa semester <strong>[X]</strong> program studi Sistem Informasi
+          di BINUS University dengan peminatan Business Intelligence. Saya tertarik pada
+          analisis data, visualisasi data, dan perancangan data warehouse untuk mendukung
+          strategi bisnis.
+        </p>
+        <p>
+          Di luar perkuliahan, saya aktif di <strong>BINUS TV Club</strong>. Di sana saya
+          belajar produksi konten, kerja tim, manajemen waktu, dan cara menyampaikan
+          informasi secara menarik. Kemampuan ini juga saya pakai saat menyajikan
+          <em>data storytelling</em>.
+        </p>
+        <p>
+          Saat ini saya mencari kesempatan <strong>magang</strong> di bidang Data Analyst,
+          Business Intelligence, atau Business Analyst.
+        </p>
+      </div>
+      <div class="stats reveal">
+        <div class="stat-card"><h3 data-target="3.xx">0</h3><p>IPK</p></div>
+        <div class="stat-card"><h3 data-target="5">0</h3><p>Proyek Data</p></div>
+        <div class="stat-card"><h3 data-target="10">0</h3><p>Produksi Konten</p></div>
+        <div class="stat-card"><h3 data-target="4">0</h3><p>Sertifikasi</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KEAHLIAN ============ -->
+  <section class="section alt" id="skills">
+    <h2 class="section-title">Keahlian <span>Saya</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">📈</div>
+        <h3>Business Intelligence</h3>
+        <ul class="skill-bars">
+          <li><span>Power BI</span><div class="bar"><div style="--w:85%"></div></div></li>
+          <li><span>Tableau</span><div class="bar"><div style="--w:75%"></div></div></li>
+          <li><span>Microsoft Excel</span><div class="bar"><div style="--w:90%"></div></div></li>
+          <li><span>Looker Studio</span><div class="bar"><div style="--w:70%"></div></div></li>
+        </ul>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🗄️</div>
+        <h3>Data &amp; Database</h3>
+        <ul class="skill-bars">
+          <li><span>SQL (MySQL / SQL Server)</span><div class="bar"><div style="--w:80%"></div></div></li>
+          <li><span>Python (Pandas)</span><div class="bar"><div style="--w:70%"></div></div></li>
+          <li><span>Data Warehouse &amp; ETL</span><div class="bar"><div style="--w:70%"></div></div></li>
+          <li><span>ERD &amp; Database Design</span><div class="bar"><div style="--w:80%"></div></div></li>
+        </ul>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🎬</div>
+        <h3>Media &amp; Kreatif</h3>
+        <ul class="skill-bars">
+          <li><span>Adobe Premiere Pro</span><div class="bar"><div style="--w:80%"></div></div></li>
+          <li><span>Videografi &amp; Kamera</span><div class="bar"><div style="--w:75%"></div></div></li>
+          <li><span>Canva / Figma</span><div class="bar"><div style="--w:80%"></div></div></li>
+          <li><span>Scriptwriting</span><div class="bar"><div style="--w:70%"></div></div></li>
+        </ul>
+      </div>
+    </div>
+    <div class="soft-skills reveal">
+      <h3>Soft Skills</h3>
+      <div class="tags">
+        <span>Analytical Thinking</span><span>Data Storytelling</span><span>Teamwork</span>
+        <span>Komunikasi</span><span>Problem Solving</span><span>Time Management</span>
+        <span>Kepemimpinan</span><span>Adaptif</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROYEK ============ -->
+  <section class="section" id="projects">
+    <h2 class="section-title">Proyek <span>Unggulan</span></h2>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="bi">Business Intelligence</button>
+      <button class="filter-btn" data-filter="db">Database</button>
+      <button class="filter-btn" data-filter="media">Media</button>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-card reveal" data-category="bi">
+        <div class="project-thumb" style="--c1:#4f46e5;--c2:#06b6d4">📊</div>
+        <div class="project-body">
+          <h3>Dashboard Penjualan Retail</h3>
+          <p>Dashboard interaktif di Power BI untuk memantau tren penjualan, produk terlaris,
+            dan performa cabang. Membantu mengidentifikasi wilayah dengan pertumbuhan terendah.</p>
+          <div class="tags small"><span>Power BI</span><span>DAX</span><span>Excel</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Lihat Dashboard →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="db">
+        <div class="project-thumb" style="--c1:#0ea5e9;--c2:#22c55e">🗄️</div>
+        <div class="project-body">
+          <h3>Perancangan Data Warehouse</h3>
+          <p>Merancang star schema (tabel fakta &amp; dimensi) dan proses ETL untuk data
+            transaksi perusahaan fiktif, sebagai sumber data analisis OLAP.</p>
+          <div class="tags small"><span>SQL Server</span><span>SSIS</span><span>Star Schema</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="bi">
+        <div class="project-thumb" style="--c1:#f59e0b;--c2:#ef4444">🐍</div>
+        <div class="project-body">
+          <h3>Analisis Data Pelanggan</h3>
+          <p>Analisis eksploratif dan segmentasi pelanggan (RFM) memakai Python untuk
+            menghasilkan rekomendasi strategi pemasaran.</p>
+          <div class="tags small"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Notebook →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="db">
+        <div class="project-thumb" style="--c1:#8b5cf6;--c2:#ec4899">🧩</div>
+        <div class="project-body">
+          <h3>Sistem Informasi Inventaris</h3>
+          <p>Analisis kebutuhan, pembuatan ERD, dan implementasi database untuk sistem
+            pencatatan stok barang pada UMKM.</p>
+          <div class="tags small"><span>MySQL</span><span>ERD</span><span>UML</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Dokumentasi →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="media">
+        <div class="project-thumb" style="--c1:#ef4444;--c2:#f97316">🎥</div>
+        <div class="project-body">
+          <h3>Produksi Konten BINUS TV Club</h3>
+          <p>Terlibat dalam produksi video liputan acara kampus: pra-produksi, pengambilan
+            gambar, hingga editing untuk dipublikasikan di media sosial.</p>
+          <div class="tags small"><span>Premiere Pro</span><span>Videografi</span><span>Teamwork</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Tonton Video →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="bi">
+        <div class="project-thumb" style="--c1:#14b8a6;--c2:#3b82f6">📉</div>
+        <div class="project-body">
+          <h3>Analisis Engagement Media Sosial</h3>
+          <p>Menggabungkan BI dan media: menganalisis performa konten BINUS TV Club
+            (views, likes, reach) untuk menentukan jenis konten dan jam unggah terbaik.</p>
+          <div class="tags small"><span>Looker Studio</span><span>Google Sheets</span></div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Lihat Laporan →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ ORGANISASI ============ -->
+  <section class="section alt" id="experience">
+    <h2 class="section-title">Pengalaman <span>Organisasi</span></h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">20XX – Sekarang</span>
+          <h3>Anggota / [Jabatan] – BINUS TV Club</h3>
+          <p class="timeline-org">BINUS University</p>
+          <ul>
+            <li>Berkontribusi dalam produksi [jumlah]+ konten video liputan dan program kampus.</li>
+            <li>Bertugas sebagai [kameramen / editor / produser / host] di berbagai acara.</li>
+            <li>Bekerja sama dengan tim lintas divisi untuk memenuhi tenggat publikasi.</li>
+            <li>Ikut menyusun konsep konten dan jadwal produksi.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">20XX</span>
+          <h3>Panitia [Nama Acara] – BINUS TV Club</h3>
+          <p class="timeline-org">BINUS University</p>
+          <ul>
+            <li>Bertanggung jawab atas dokumentasi dan publikasi acara.</li>
+            <li>Mengoordinasikan [jumlah] anggota tim selama acara berlangsung.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PENDIDIKAN & SERTIFIKASI ============ -->
+  <section class="section" id="education">
+    <h2 class="section-title">Pendidikan &amp; <span>Sertifikasi</span></h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <h3>🎓 BINUS University</h3>
+        <p class="edu-major">S1 Sistem Informasi – Peminatan Business Intelligence</p>
+        <p class="edu-date">20XX – Sekarang · IPK: 3.xx / 4.00</p>
+        <p><strong>Mata kuliah relevan:</strong> Data Warehouse, Business Intelligence,
+          Database Systems, Data Mining, Analisis &amp; Perancangan Sistem Informasi,
+          Statistika Bisnis.</p>
+      </div>
+      <div class="edu-card reveal">
+        <h3>📜 Sertifikasi</h3>
+        <ul class="cert-list">
+          <li><strong>Microsoft Power BI Data Analyst</strong><span>Penerbit · 20XX</span></li>
+          <li><strong>Google Data Analytics</strong><span>Coursera · 20XX</span></li>
+          <li><strong>SQL for Data Science</strong><span>Penerbit · 20XX</span></li>
+          <li><strong>[Nama Sertifikat]</strong><span>Penerbit · 20XX</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAK ============ -->
+  <section class="section alt" id="contact">
+    <h2 class="section-title">Hubungi <span>Saya</span></h2>
+    <p class="contact-intro">Saya terbuka untuk kesempatan magang. Silakan hubungi saya!</p>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a href="mailto:emailkamu@gmail.com" class="contact-item">📧 <span>emailkamu@gmail.com</span></a>
+        <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener" class="contact-item">💼 <span>linkedin.com/in/username</span></a>
+        <a href="https://github.com/username" target="_blank" rel="noopener" class="contact-item">💻 <span>github.com/username</span></a>
+        <div class="contact-item">📍 <span>Jakarta, Indonesia</span></div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <input type="text" id="name" placeholder="Nama" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea id="message" rows="5" placeholder="Pesan" required></textarea>
+        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Nama Lengkap Kamu. Dibuat dengan ❤️.</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
