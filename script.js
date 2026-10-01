@@ -72,7 +72,7 @@ function animateCounter(el) {
   if (!/^\d+(\.\d+)?$/.test(raw)) { el.textContent = raw; return; }
   const target = parseFloat(raw);
   const decimals = (raw.split('.')[1] || '').length;
-  const suffix = decimals === 0 ? '+' : ''; // "5" -> "5+", IPK "3.75" -> "3.75"
+  const suffix = el.dataset.suffix || ''; // opsional, misal data-suffix="+"
   let start = null;
   function step(ts) {
     if (!start) start = ts;
@@ -103,7 +103,7 @@ document.getElementById('contactForm').addEventListener('submit', e => {
   const message = document.getElementById('message').value;
   const subject = encodeURIComponent(`Pesan dari ${name} (Portofolio)`);
   const body = encodeURIComponent(`${message}\n\nDari: ${name} <${email}>`);
-  window.location.href = `mailto:emailkamu@gmail.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:megavianamantya@gmail.com?subject=${subject}&body=${body}`;
 });
 
 // ============ TAHUN FOOTER ============
